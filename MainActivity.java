@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] rusArray = {"	être	",
+    String[] frArray = {"	être	",
             "	aller	",
             "	voler	",
             "	nager	",
@@ -5952,13 +5952,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void nextClick (View view) {
-        if (i < 0 || i >= (rusArray.length - 1)) {
+        if (i < 0 || i >= (frArray.length - 1)) {
             i = 0;
 
         } else {
             TextView textView = (TextView) findViewById(R.id.textView);
             i++;
-            textView.setText(rusArray[i]);
+            textView.setText(frArray[i]);
 
         }
         if (j < 0 || j >= (engArray.length - 1)) {
@@ -5972,13 +5972,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void previousClick (View view) {
-        if (i <= 0 || i >= (rusArray.length -1)) {
+        if (i <= 0 || i >= (frArray.length -1)) {
             i = 0;
 
         } else {
             TextView textView = (TextView) findViewById(R.id.textView);
             i--;
-            textView.setText(rusArray[i]);
+            textView.setText(frArray[i]);
 
         }
         if (j <= 0 || j >= (engArray.length -1)) {
@@ -6006,44 +6006,44 @@ public class MainActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.item1) {
             TextView textView = (TextView) findViewById(R.id.textView);
-            textView.setText(rusArray[0]);
+            textView.setText(frArray[0]);
             i = 0;
             j = 0;
         }
 
         if (item.getItemId() == R.id.item2) {
             TextView textView2 = (TextView) findViewById(R.id.textView);
-            textView2.setText(rusArray[792]);
+            textView2.setText(frArray[792]);
             i = 792;
             j = 792;
         }
         if (item.getItemId() == R.id.item3) {
             TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(rusArray[2424]);
+            textView3.setText(frArray[2424]);
             i = 2424;
             j = 2424;
         }
         if (item.getItemId() == R.id.item4) {
             TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(rusArray[2539]);
+            textView3.setText(frArray[2539]);
             i = 2539;
             j = 2539;
         }
         if (item.getItemId() == R.id.item5) {
             TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(rusArray[2566]);
+            textView3.setText(frArray[2566]);
             i = 2566;
             j = 2566;
         }
         if (item.getItemId() == R.id.item6) {
             TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(rusArray[2914]);
+            textView3.setText(frArray[2914]);
             i = 2914;
             j = 2914;
         }
         if (item.getItemId() == R.id.item7) {
             TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(rusArray[2938]);
+            textView3.setText(frArray[2938]);
             i = 2938;
             j = 2938;
         } else {
